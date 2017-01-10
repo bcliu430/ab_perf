@@ -7,7 +7,7 @@ IP_BASE=`echo $GATEWAY | cut -d"." -f1-3`.
 
 function run_apache {
     touch vm2.dat
-    ab -t 10  "http://"$IP_BASE'4'"/" >> vm2.dat  &
+    ab -t 1  "http://"$IP_BASE'4'"/" >> vm2.dat  &
     wait
 }
 
