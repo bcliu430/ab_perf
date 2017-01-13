@@ -7,8 +7,10 @@ IP_BASE=`echo $GATEWAY | cut -d"." -f1-3`.
 
 function run_apache {
     touch vm2.dat
-    ab -t 1  "http://"$IP_BASE'4'"/" >> vm2.dat  &
-    wait
+    for i in `seq 1 10`; do 
+        siege -q -b -t3s http://10.0.0.4/ &
+        wait
+    done
 }
 
 echo "start experiment..."
@@ -16,3 +18,4 @@ wait
 echo "old data cleaned"
 
     run_apache;
+    mv /var/log/siege.log vm2.dat

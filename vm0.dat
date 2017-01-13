@@ -1,47 +1,11 @@
-This is ApacheBench, Version 2.3 <$Revision: 1528965 $>
-Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
-Licensed to The Apache Software Foundation, http://www.apache.org/
-
-Benchmarking 10.0.0.2 (be patient)
-This is ApacheBench, Version 2.3 <$Revision: 1528965 $>
-Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
-Licensed to The Apache Software Foundation, http://www.apache.org/
-
-Benchmarking 10.0.0.2 (be patient)
-
-
-Server Software:        Apache/2.4.7
-Server Hostname:        10.0.0.2
-Server Port:            80
-
-Document Path:          /
-Document Length:        11510 bytes
-
-Concurrency Level:      1
-Time taken for tests:   1.000 seconds
-Complete requests:      1083
-Failed requests:        0
-Total transferred:      12760989 bytes
-HTML transferred:       12465330 bytes
-Requests per second:    1082.53 [#/sec] (mean)
-Time per request:       0.924 [ms] (mean)
-Time per request:       0.924 [ms] (mean, across all concurrent requests)
-Transfer rate:          12456.45 [Kbytes/sec] received
-
-Connection Times (ms)
-              min  mean[+/-sd] median   max
-Connect:        0    0   0.0      0       0
-Processing:     1    1   0.1      1       5
-Waiting:        0    1   0.1      1       5
-Total:          1    1   0.2      1       5
-
-Percentage of the requests served within a certain time (ms)
-  50%      1
-  66%      1
-  75%      1
-  80%      1
-  90%      1
-  95%      1
-  98%      1
-  99%      1
- 100%      5 (longest request)
+      Date & Time,  Trans,  Elap Time,  Data Trans,  Resp Time,  Trans Rate,  Throughput,  Concurrent,    OKAY,   Failed
+2017-01-12 22:01:40,   2639,       1.39,           1,       0.01,     1898.56,        0.72,       10.60,    2644,       0
+2017-01-12 22:01:42,   3745,       1.98,           2,       0.01,     1891.41,        1.01,       10.48,    3747,       0
+2017-01-12 22:01:44,   3731,       1.98,           2,       0.01,     1884.34,        1.01,       10.26,    3736,       0
+2017-01-12 22:01:46,   3762,       1.98,           2,       0.01,     1900.00,        1.01,       10.71,    3766,       0
+2017-01-12 22:01:48,   3712,       1.98,           2,       0.01,     1874.75,        1.01,       10.49,    3716,       0
+2017-01-12 22:01:50,   3704,       1.98,           2,       0.01,     1870.71,        1.01,       10.62,    3707,       0
+2017-01-12 22:01:52,   3707,       1.98,           2,       0.01,     1872.22,        1.01,       10.53,    3708,       0
+2017-01-12 22:01:54,   3701,       1.98,           2,       0.01,     1869.19,        1.01,       10.49,    3706,       0
+2017-01-12 22:01:56,   3711,       1.98,           2,       0.01,     1874.24,        1.01,       10.55,    3718,       0
+2017-01-12 22:01:58,   3731,       1.98,           2,       0.01,     1884.34,        1.01,       10.48,    3739,       0
