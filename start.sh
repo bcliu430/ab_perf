@@ -14,7 +14,7 @@ function run_apache {
     touch vm$TIMES.dat
     echo -n "" > vm$TIMES.dat
     for i in `seq 1 10`; do
-        ab -t 3 "http://10.0.0.1"$TIMES"/" >> vm$TIMES.dat  &
+        ab -t 3 "http://10.0.0."$(($TIMES+10))"/" >> vm$TIMES.dat  &
         wait
     done
 }
